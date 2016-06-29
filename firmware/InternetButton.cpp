@@ -277,9 +277,9 @@ void InternetButton::playNote(String note, int duration){
     freq = float(256*pow(1.05946,(     12.0*(octave-4)        +noteNum)));
     //          C4^  (2^1/12)^    12 half-steps in an octave      ^how many extra half-steps within that octave, 0 for a C
     
-    tone(D0,int(freq),duration);
+    tone(D2,int(freq),duration);
     delay(duration);
-    noTone(D0);
+    noTone(D2);
     //return freq;
 }
 
